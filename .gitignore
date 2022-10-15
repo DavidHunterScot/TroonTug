@@ -1,0 +1,8 @@
+# dependencies installed by node package manager (NPM)
+node_modules
+
+# local development output files
+public
+
+# packages lock file
+package-lock.json
