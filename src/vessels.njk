@@ -27,7 +27,7 @@ layout: 'base.njk'
               <p class="w3-xxlarge" style="margin: 0"><b>{{ vessel.data.name }}</b></p>
               <p class="w3-medium w3-text-gray"><i>{{ vessel.data.type }}</i></p>
               <p>
-                <a href="{{ vessel.data.spec }}" class="w3-button w3-dark-gray w3-hover-dark-gray w3-hover-opacity w3-border-dark-gray w3-border">Vessel Spec</a>
+                <a href="{{ vessel.data.spec }}" class="w3-button w3-dark-gray w3-hover-dark-gray w3-hover-opacity w3-border-dark-gray w3-border" target="_blank">Vessel Spec</a>
                 <label for="modal-toggle-coming-soon" class="w3-button {% if loop.index % 2 === 0 %}w3-white{% else %}w3-light-gray{% endif %} w3-hover-light-gray w3-hover-opacity w3-border-dark-gray w3-border">Photo Gallery</label>
               </p>
             </div>
