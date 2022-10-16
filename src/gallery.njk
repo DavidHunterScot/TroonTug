@@ -1,0 +1,64 @@
+---
+layout: 'base.njk'
+---
+
+        <style type="text/css">
+          .modal-toggle
+          {
+            display: none;
+          }
+          
+          #red-empress-1:checked ~ #modal-red-empress-1
+          {
+            display: block;
+          }
+        </style>
+        
+        <input type="checkbox" id="red-empress-1" class="modal-toggle">
+        
+        <div class="w3-padding-large w3-padding-64 w3-center" style="color: white; background-image: url('/assets/images/photogallery1-darkened.JPG'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+          <div class="w3-padding-64">
+            <div class="w3-xxlarge"><b>GALLERY</b></div>
+            <div class="w3-large w3-margin-top">A selection of our best pictures!</div>
+          </div>
+        </div>
+        
+        <div class="w3-padding-large w3-center w3-padding-32 w3-pale-red">
+          <div class="w3-xlarge"><b>VESSEL GALLERIES</b></div>
+          <div class="w3-text-gray">Head on over to the <a href="vessels.html">Our Vessels</a> page to view their galleries and to get more information.</div>
+        </div>
+        
+        <div class="w3-padding-large w3-center w3-padding-32">
+          <div class="w3-xlarge"><b>FORMER VESSELS</b></div>
+          <div class="w3-text-gray">Now sold, their memories live on.</div>
+        </div>
+        
+        <div class="w3-padding w3-padding-32">
+          <p class="w3-center w3-xlarge"><b>RED EMPRESS</b> <i class="w3-text-gray">(SOLD)</i></p>
+          <div class="w3-row">
+            <div class="w3-third">
+              <label for="red-empress-1" style="cursor: pointer;">
+                <div class="w3-card">
+                <img src="/assets/images/vessels/red-empress/approaching-Troon-With-Red-Wood.JPG" class="w3-image">
+                  
+                  <div class="w3-container w3-center">
+                    <p>Approaching Troon with Red Wood</p>
+                  </div>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+        
+        <div id="modal-red-empress-1" class="w3-modal w3-center w3-padding-large">
+          <div class="w3-modal-content w3-black" style="width: 90vw;">
+            <div class="w3-container">
+              <label for="red-empress-1" class="w3-button w3-display-topright w3-black w3-hover-red">×</label>
+              <p>
+                <img src="/assets/images/vessels/red-empress/approaching-Troon-With-Red-Wood.JPG" class="w3-image">
+              </p>
+              <p>Approaching Troon with Red Wood</p>
+              <p><label for="red-empress-1" class="w3-button w3-dark-gray">Close</label></p>
+            </div>
+          </div>
+        </div>
