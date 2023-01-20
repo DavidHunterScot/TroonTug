@@ -1,11 +1,12 @@
 <? include __DIR__ . DIRECTORY_SEPARATOR . 'config.inc.php' ?>
 <? if( ! isset( $current_page ) ) $current_page = ""; ?>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title><? if( isset( $page_title ) ): ?><?= $page_title ?> - <? endif ?><?= $site_title ?><? if( ! isset( $page_title ) ): ?> - Landing Craft and Tug Owner Operators<? endif ?></title>
+        <title><? if( isset( $page_title ) ): ?><?= $page_title ?> &#8211; <? endif ?><?= $site_title ?><? if( ! isset( $page_title ) ): ?> &#8211; Landing Craft and Tug Owner Operators<? endif ?></title>
 
         <? if( isset( $css_urls ) && is_array( $css_urls ) && count( $css_urls ) > 0 ): ?>
             <? foreach( $css_urls as $css_url ): ?>

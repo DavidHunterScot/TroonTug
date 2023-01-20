@@ -1,0 +1,19 @@
+<? $current_page = 'contact' ?>
+<? $page_title = 'Contact Us' ?>
+<? include __DIR__ . DIRECTORY_SEPARATOR . 'header.inc.php' ?>
+
+        <div class="w3-content w3-padding-large w3-padding-32 w3-large">
+            <p>Contact <strong>Robin Taylor</strong></p>
+            <p><strong>Mobile Number:</strong>&nbsp;07836 569110<br><strong>Office Number:</strong>&nbsp;01292 315489<br><strong>Fax Number:</strong>&nbsp;01292 317276</p>
+            <p><strong>Email:</strong> <script type="text/javascript">document.write('<a href="mailto:' + 'robin' + '@' + 'troontug' + '.' + 'co' + '.' + 'uk' + '">' + 'robin' + '@' + 'troontug' + '.' + 'co' + '.' + 'uk' + '</a>');</script><noscript>robin [at] troontug [dot] co [dot] uk</noscript></p>
+            <p><strong>Our Postal Address:-</strong></p>
+            <p>Troon Tug Co Ltd<br>The Harbour<br>Troon<br>Scotland<br>United Kingdom<br>KA10 6DW</p>
+        </div>
+        
+        <noscript>
+            &lt;div class="w3-content w3-padding-large"&gt;If your Web Browser supported JavaScript, we could have shown you an Interactive Map of where we are, courtesy of Google Maps.&lt;/div&gt;
+        </noscript>
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2257.0205441269136!2d-4.686444433752011!3d55.54942803049947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4889d1baec61fc4b%3A0x5c92426b22d15768!2sTroon%20KA10%206DW%2C%20UK!5e0!3m2!1sen!2sch!4v1574876163949!5m2!1sen!2sch" height="450" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
+
+<? include __DIR__ . DIRECTORY_SEPARATOR . 'footer.inc.php' ?>
