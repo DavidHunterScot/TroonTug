@@ -8,6 +8,8 @@
 
         <title><? if( isset( $page_title ) ): ?><?= $page_title ?> &#8211; <? endif ?><?= $site_title ?><? if( ! isset( $page_title ) ): ?> &#8211; Landing Craft and Tug Owner Operators<? endif ?></title>
 
+        <link rel="icon" type="image/x-icon" href="<?= $images_url ?>/favicon.ico">
+        
         <? if( isset( $css_urls ) && is_array( $css_urls ) && count( $css_urls ) > 0 ): ?>
             <? foreach( $css_urls as $css_url ): ?>
                 <link rel="stylesheet" type="text/css" href="<?= $css_url ?>">
