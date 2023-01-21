@@ -1,5 +1,5 @@
 <? $current_page = 'about' ?>
-<? include __DIR__ . DIRECTORY_SEPARATOR . 'header.inc.php' ?>
+<? include __DIR__ . DIRECTORY_SEPARATOR . '_inc' . DIRECTORY_SEPARATOR . 'header.php' ?>
 
                 <div style="background-image: url('<?= $images_url ?>/IMG_1432-800x493-optimazed.JPG'); background-size: cover; background-repeat: no-repeat; background-position: center; height: 30vw;"></div>
                 
@@ -13,4 +13,4 @@
                     <p>Please contact us for your requirements.</p>
                 </div>
 
-<? include __DIR__ . DIRECTORY_SEPARATOR . 'footer.inc.php' ?>
+<? include __DIR__ . DIRECTORY_SEPARATOR . '_inc' . DIRECTORY_SEPARATOR . 'footer.php' ?>
