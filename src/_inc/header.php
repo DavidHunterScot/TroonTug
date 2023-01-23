@@ -1,4 +1,4 @@
-<? include_once __DIR__ . DIRECTORY_SEPARATOR . 'config.php' ?>
+<? include __DIR__ . DIRECTORY_SEPARATOR . 'config.php' ?>
 <? if( ! isset( $current_page ) ) $current_page = ""; ?>
 <!DOCTYPE html>
 <html lang="en">
