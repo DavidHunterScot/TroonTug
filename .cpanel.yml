@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/troontug/subdomains/coming-soon-to/
+    - /bin/cp -R public $DEPLOYPATH
