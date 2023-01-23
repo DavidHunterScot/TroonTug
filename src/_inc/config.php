@@ -6,7 +6,7 @@ $site_description = "Landing Craft and Tug Owner Operators";
 $developer_credit_name = "David Hunter";
 $developer_credit_url = "https://davidhunter.scot";
 
-$files_url = "https://troontug.clientfiles.davidhunter.scot";
+$files_url = "/assets";
 $images_url = $files_url . "/images";
 $downloads_url = $files_url . "/downloads";
 $w3css_url = $files_url . "/w3css";
