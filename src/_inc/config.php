@@ -8,7 +8,9 @@ $developer_credit_url = "https://davidhunter.scot";
 
 $files_url = "/assets";
 $images_url = $files_url . "/images";
+$vessel_images_url = $images_url . "/vessels";
 $downloads_url = $files_url . "/downloads";
+$vessel_specs_url = $downloads_url . "/vessel-specs";
 $w3css_url = $files_url . "/w3css";
 $webfonts_url = $files_url . "/webfonts";
 $css_url = $files_url . "/css";
