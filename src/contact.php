@@ -1,6 +1,11 @@
-<? $current_page = 'contact' ?>
-<? $page_title = 'Contact Us' ?>
-<? include __DIR__ . DIRECTORY_SEPARATOR . '_inc' . DIRECTORY_SEPARATOR . 'header.php' ?>
+<?php
+
+$current_page = 'contact';
+$page_title = 'Contact Us';
+
+include __DIR__ . DIRECTORY_SEPARATOR . '_inc' . DIRECTORY_SEPARATOR . 'header.php';
+
+?>
 
         <div class="w3-content w3-padding-large w3-padding-32 w3-large">
             <div class="w3-row w3-padding-64">

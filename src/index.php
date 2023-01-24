@@ -1,7 +1,12 @@
-<? $current_page = 'about' ?>
-<? include __DIR__ . DIRECTORY_SEPARATOR . '_inc' . DIRECTORY_SEPARATOR . 'header.php' ?>
+<?php
 
-                <div class="w3-black w3-padding" style="display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-shadow: 2px 2px black; background-image: linear-gradient( rgba( 0, 0, 0, 0.3 ), rgba( 0, 0, 0, 0.3 ) ), url('<?= $images_url ?>/IMG_1432-800x493-optimised.JPG'); background-size: cover; background-repeat: no-repeat; background-position: center; height: 35vw;">
+$current_page = 'about';
+
+include __DIR__ . DIRECTORY_SEPARATOR . '_inc' . DIRECTORY_SEPARATOR . 'header.php';
+
+?>
+
+                <div class="w3-black w3-padding" style="display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-shadow: 2px 2px black; background-image: linear-gradient( rgba( 0, 0, 0, 0.3 ), rgba( 0, 0, 0, 0.3 ) ), url('<?php echo $images_url; ?>/IMG_1432-800x493-optimised.JPG'); background-size: cover; background-repeat: no-repeat; background-position: center; height: 35vw;">
                     <h2 class="w3-xxxlarge w3-hide-small"><b>Troon Tug Company</b></h2>
                     <p class="w3-hide-small"><i>Previously Taylor and Taylor, run by Robin Taylor</i></p>
                     <p class="w3-large w3-hide-small w3-show-medium w3-show-large">has been in the marine trades for over thirty eight years.</p>
@@ -17,4 +22,4 @@
                     <p>Please contact us for your requirements.</p>
                 </div>
 
-<? include __DIR__ . DIRECTORY_SEPARATOR . '_inc' . DIRECTORY_SEPARATOR . 'footer.php' ?>
+<?php include __DIR__ . DIRECTORY_SEPARATOR . '_inc' . DIRECTORY_SEPARATOR . 'footer.php'; ?>

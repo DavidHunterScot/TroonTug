@@ -23,28 +23,28 @@ include __DIR__ . DIRECTORY_SEPARATOR . '_inc' . DIRECTORY_SEPARATOR . 'header.p
 ?>
 
 <div class="w3-padding-32">
-    <? for( $v = 0; $v < count( $vessels ); $v++ ): ?>
-        <? $vessel = $vessels[ $v ]; ?>
+    <?php for( $v = 0; $v < count( $vessels ); $v++ ): ?>
+        <?php $vessel = $vessels[ $v ]; ?>
         <div class="w3-row">
-            <? $vessel_image = function( $vessel ) { ?>
-            <div class="w3-half" style="background-image: url( '<?= $vessel['image_url'] ?>' ); background-size: cover; background-position: center; background-repeat: no-repeat; aspect-ratio: 16 / 10;">
+            <?php $vessel_image = function( $vessel ) { ?>
+            <div class="w3-half" style="background-image: url( '<?php echo $vessel['image_url']; ?>' ); background-size: cover; background-position: center; background-repeat: no-repeat; aspect-ratio: 16 / 10;">
                 
             </div>
-            <? } ?>
+            <?php } ?>
 
-            <? if( $v % 2 === 0 ) $vessel_image( $vessel ); ?>
+            <?php if( $v % 2 === 0 ) $vessel_image( $vessel ); ?>
 
             <div class="w3-half w3-padding-32 w3-center">
-                <h2 class="w3-xxlarge w3-wide"><b><?= strtoupper( $vessel['name'] ) ?></b></h2>
-                <p><?= $vessel['description'] ?></p>
-                <? if( isset( $vessel['spec_sheet_url'] ) ): ?>
-                    <p><a href="<?= $vessel['spec_sheet_url'] ?>" class="w3-button w3-dark-gray w3-hover-dark-gray w3-round-xlarge" target="_blank">View/Download Vessel Spec</a></p>
-                <? endif ?>
+                <h2 class="w3-xxlarge w3-wide"><b><?php echo strtoupper( $vessel['name'] ); ?></b></h2>
+                <p><?php echo $vessel['description']; ?></p>
+                <?php if( isset( $vessel['spec_sheet_url'] ) ): ?>
+                    <p><a href="<?php echo $vessel['spec_sheet_url']; ?>" class="w3-button w3-dark-gray w3-hover-dark-gray w3-round-xlarge" target="_blank">View/Download Vessel Spec</a></p>
+                <?php endif; ?>
             </div>
 
-            <? if( $v % 2 === 1 ) $vessel_image( $vessel ); ?>
+            <?php if( $v % 2 === 1 ) $vessel_image( $vessel ); ?>
         </div>
-    <? endfor ?>
+    <?php endfor; ?>
 </div>
 
-<? include __DIR__ . DIRECTORY_SEPARATOR . '_inc' . DIRECTORY_SEPARATOR . 'footer.php' ?>
+<?php include __DIR__ . DIRECTORY_SEPARATOR . '_inc' . DIRECTORY_SEPARATOR . 'footer.php'; ?>
