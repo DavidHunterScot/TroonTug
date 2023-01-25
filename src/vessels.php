@@ -26,13 +26,9 @@ include __DIR__ . DIRECTORY_SEPARATOR . '_inc' . DIRECTORY_SEPARATOR . 'header.p
     <?php for( $v = 0; $v < count( $vessels ); $v++ ): ?>
         <?php $vessel = $vessels[ $v ]; ?>
         <div class="w3-row">
-            <?php $vessel_image = function( $vessel ) { ?>
-            <div class="w3-half" style="background-image: url( '<?php echo $vessel['image_url']; ?>' ); background-size: cover; background-position: center; background-repeat: no-repeat; aspect-ratio: 16 / 10;">
+            <div class="w3-half<?php if( $v % 2 === 1 ) echo ' w3-show-small w3-hide-medium w3-hide-large'; ?>" style="background-image: url( '<?php echo $vessel['image_url']; ?>' ); background-size: cover; background-position: center; background-repeat: no-repeat; aspect-ratio: 16 / 10;">
                 
             </div>
-            <?php } ?>
-
-            <?php if( $v % 2 === 0 ) $vessel_image( $vessel ); ?>
 
             <div class="w3-half w3-padding-32 w3-center">
                 <h2 class="w3-xxlarge w3-wide"><b><?php echo strtoupper( $vessel['name'] ); ?></b></h2>
@@ -42,7 +38,11 @@ include __DIR__ . DIRECTORY_SEPARATOR . '_inc' . DIRECTORY_SEPARATOR . 'header.p
                 <?php endif; ?>
             </div>
 
-            <?php if( $v % 2 === 1 ) $vessel_image( $vessel ); ?>
+            <?php if( $v % 2 === 1 ): ?>
+            <div class="w3-half w3-hide-small w3-show-medium w3-show-large" style="background-image: url( '<?php echo $vessel['image_url']; ?>' ); background-size: cover; background-position: center; background-repeat: no-repeat; aspect-ratio: 16 / 10;">
+                
+            </div>
+            <?php endif; ?>
         </div>
     <?php endfor; ?>
 </div>
