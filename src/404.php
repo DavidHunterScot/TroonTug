@@ -1,7 +1,7 @@
 <?php
 
 $page_title = 'Not Found (404)';
-$custom_output_path = __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'public' . DIRECTORY_SEPARATOR . '404.html';
+$friendly_urls = false;
 
 include __DIR__ . DIRECTORY_SEPARATOR . '_inc' . DIRECTORY_SEPARATOR . 'header.php';
 
