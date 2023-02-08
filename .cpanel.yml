@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - php Get-and-Run-Latest-StaticPHP.php
+    - php StaticPHP-Launcher.php
     - export DEPLOYPATH=/home/troontug/subdomains/coming-soon-to/
     - /bin/rm -R $DEPLOYPATH/public/*
     - /bin/cp -R public $DEPLOYPATH
