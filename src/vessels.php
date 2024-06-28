@@ -1,14 +1,15 @@
+---
+current_page: vessels
+page_title: Our Vessels
+layout: src/_inc/base.php
+---
+
 <?php
-
-include __DIR__ . DIRECTORY_SEPARATOR . '_inc' . DIRECTORY_SEPARATOR . 'config.php';
-
-$current_page = 'vessels';
-$page_title = 'Our Vessels';
 
 $red_baroness['name'] = 'Red Baroness';
 $red_baroness['description'] = 'Ro-Ro Twin Screw Landing Craft';
-$red_baroness['spec_sheet_url'] = $vessel_specs_url . '/RED-BARONESS-spec-sheet.pdf';
-$red_baroness['images_url'] = $vessel_images_url . '/red-baroness';
+$red_baroness['spec_sheet_url'] = '--- metadata.vessel_specs_url ---/RED-BARONESS-spec-sheet.pdf';
+$red_baroness['images_url'] = '--- metadata.vessel_images_url ---/red-baroness';
 $red_baroness['image_url'] = $red_baroness['images_url'] . '/IMG_2210.JPG';
 $red_baroness['gallery_id'] = 'vessel_gallery_' . str_replace( ' ', '_', strtolower( $red_baroness['name'] ) );
 $red_baroness['gallery'][] = $red_baroness['image_url'];
@@ -20,10 +21,8 @@ $vessels[] = $red_baroness;
 
 $red_countess['name'] = 'Red Countess';
 $red_countess['description'] = '(Replacement Vessel Coming Soon)';
-$red_countess['image_url'] = $images_url . '/troontug-logo.PNG';
+$red_countess['image_url'] = '--- metadata.images_url ---/troontug-logo.PNG';
 $vessels[] = $red_countess;
-
-include __DIR__ . DIRECTORY_SEPARATOR . '_inc' . DIRECTORY_SEPARATOR . 'header.php';
 
 ?>
 
@@ -155,5 +154,3 @@ include __DIR__ . DIRECTORY_SEPARATOR . '_inc' . DIRECTORY_SEPARATOR . 'header.p
         </div>
     </div>
 <?php endforeach; ?>
-
-<?php include __DIR__ . DIRECTORY_SEPARATOR . '_inc' . DIRECTORY_SEPARATOR . 'footer.php'; ?>
